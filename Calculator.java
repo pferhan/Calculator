@@ -12,10 +12,23 @@ public class Calculator {
         System.out.println("Second number: ");
         int num2 = scan.nextInt();
 
-        int sum = num1 + num2;
+        System.out.println("Would you like to add (+) or subtract(-)?");
+        char operation = scan.next().charAt(0);
+
+        int result;
+
+        if (operation == '+')
+        {
+            result = num1+num2;
+            System.out.println("Result: " + result);
+        } else if (operation == '-')
+        {
+            result = num1-num2;
+            System.out.println("Result: " + result);
+        } else {
+            System.out.println("Invalid selection");
+        }
 
         scan.close();
-
-        System.out.println("Sum: " + sum);
     }
 }
