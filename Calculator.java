@@ -7,15 +7,15 @@ public class Calculator {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("First number: ");
-        int num1 = scan.nextInt();
+        double num1 = scan.nextDouble();
 
         System.out.println("Second number: ");
-        int num2 = scan.nextInt();
+        double num2 = scan.nextDouble();
 
         System.out.println("Choose an operation: Add(+), Subtract(-), Multiply(*), Divide(/)");
         char operation = scan.next().charAt(0);
 
-        int result;
+        double result;
 
         if (operation == '+')
         {
