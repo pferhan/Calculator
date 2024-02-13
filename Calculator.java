@@ -28,8 +28,13 @@ public class Calculator {
             result = num1*num2;
             System.out.println("Result: " + result);
         } else if (operation == '/') {
-            result = num1/num2;
-            System.out.println("Result: " + result);
+            if (num2 == 0)
+            {
+                System.out.println("Error: Divide by Zero");
+            } else {
+                result = num1/num2;
+                System.out.println("Result: " + result);
+            }
         } else {
             System.out.println("Invalid selection");
         }
